@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node": ">=14.15.0"
+  },
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "npm install --prefix whatsapp-clone && npm run build --prefix whatsapp-clone"
   },
   "keywords": [],
   "author": "",
