@@ -52,7 +52,13 @@ const StyledMessage=styled.p`
     border-radius: 10px;
     width: 80%;
     background-color: #ffffff;
+    &.received{
+    margin-left: auto;
+background-color: #dcf8c6;
+}
 `
+
+
 
 const StyledBody = styled.div`
     display:flex;
@@ -109,6 +115,7 @@ export {
     StyledFooter,
     StyledForm,
     StyledInput,
-    StyledButton
+    StyledButton,
+  
 
 }
